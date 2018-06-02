@@ -12,6 +12,7 @@ namespace MFramework
 	{
 		public GameObject firstPersonCharacter;
 		public GameObject[] characterModel;
+		public GameObject canvasWorld;
 
 		public override void OnStartLocalPlayer()
 		{
@@ -22,6 +23,8 @@ namespace MFramework
 			{
 				go.SetActive(false);
 			}
+
+			canvasWorld.SetActive(false);
 		}
 	}
 
